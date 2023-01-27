@@ -6,34 +6,50 @@ int	ft_strlen(const char *str)
 
   i = 0;
   while (str[i])
-  	i++;
+  {
+	i++;
+  }
   return (i);
 }
 
-char *reverse_words (const char *words, size_t length, char *reversed)
+char	*reverse_words(const char *words, size_t length, char *reversed)
 {
-	int	copy;
-	int	j;
+	int	i;
+	int	cp;
 
-	copy = 0;
-	while(words[length])
+	i = 0;
+	cp = i;
+	while (length)
 	{
-		if(words[length] == ' ')
-			copy = length;
-		while(words[copy] != ' ' || words[copy] ='\0')
+		while (words[length] == ' ')
 		{
-			reversed[j] = words[copy];
-			j++;
-			copy--;
+			i++;
+			cp = i;
 		}
-		lenght--;
+		while (cp >= 0)
+		{
+			
+		}
 	}
 	*reversed = '\0';
-	return reversed;
+	return (reversed);
 }
-int main(void)
+void rev_printf(const char *str)
 {
-	char	*reversed;
-	reversed = "hello world";
-	printf("%s", reverse_words("bonjour SALUT!", reversed));
+	int	len;
+	len = ft_strlen(str);
+	while (len >= 0)
+	{
+		printf("%c",str[len]);
+		len--;
+	}
+}
+
+int	main(void)
+{
+	// char	*string = "ABC DEF";
+	// char	reversed[ft_strlen(string)];
+	// printf("%s", reverse_words(string, ft_strlen(string),reversed));
+	rev_printf("bonjour");
+	printf("%d", ft_strlen("bonjour"));
 }
