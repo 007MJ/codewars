@@ -48,4 +48,3 @@ Codewars prend en charge une large gamme de langages, notamment :
 Codewars est un excellent outil pour tout développeur souhaitant améliorer ses compétences en programmation dans un cadre ludique et progressif. Que vous soyez débutant ou expérimenté, vous y trouverez des défis adaptés à votre niveau et bénéficierez de l'expérience d'une large communauté.
 
 Bon entraînement ! 🚀
-
